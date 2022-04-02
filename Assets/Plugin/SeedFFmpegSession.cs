@@ -32,7 +32,7 @@ namespace SeedFFmpeg
                 + " -colorspace bt709 -thread_queue_size 512"
                 + " -video_size " + width + "x" + height
                 + " -framerate " + frameRate
-                + " -i - -c:v libx264 -pix_fmt yuv420p -preset ultrafast "
+                + " -i - -c:v libx264 -pix_fmt yuv420p -preset veryfast"
                 + " -f flv " + rtmpUrl
                 //+ " -loglevel warning -i - " + preset.GetOptions()
                 //+ " \"" + outputPath + "\""
@@ -52,7 +52,7 @@ namespace SeedFFmpeg
         {
             if (_pipe != null)
             {
-                Debug.Log("push frame");
+                
                 ProcessQueue();
                 if (source != null) QueueFrame(source);
             }

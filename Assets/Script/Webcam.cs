@@ -12,7 +12,7 @@ namespace SeedFFmpeg
         [SerializeField] string _rtmp_url;
 
 
-        [SerializeField] int _width = 1920;
+        [SerializeField] int _width = 1280;
 
         public int width
         {
@@ -20,7 +20,7 @@ namespace SeedFFmpeg
             set { _width = value; }
         }
 
-        [SerializeField] int _height = 1080;
+        [SerializeField] int _height = 720;
 
         public int height
         {
@@ -93,7 +93,7 @@ namespace SeedFFmpeg
             if (Application.HasUserAuthorization(UserAuthorization.WebCam))
             {
                 WebCamDevice[] devices = WebCamTexture.devices;
-                _device = devices[1].name;
+                _device = devices[2].name;
                 _webcam = new WebCamTexture(_device, 1920, 1080, 30);
                 //GetComponent<Renderer>().material.mainTexture = _webcam;
                 _webcam.Play();
@@ -160,11 +160,13 @@ namespace SeedFFmpeg
 
             if (gap < 0)
             {
-                // Update without frame data.
+                //Debug.Log("push null frame");
+                // Update without frame data
                 _session.PushFrame(null);
             }
             else if (gap < delta)
             {
+                //Debug.Log("push 1 frame");
                 // Single-frame behind from the current time:
                 // Push the current frame to FFmpeg.
                 _session.PushFrame(camera.targetTexture);
@@ -172,6 +174,7 @@ namespace SeedFFmpeg
             }
             else if (gap < delta * 2)
             {
+                //Debug.Log("push 2 frame");
                 // Two-frame behind from the current time:
                 // Push the current frame twice to FFmpeg. Actually this is not
                 // an efficient way to catch up. We should think about
