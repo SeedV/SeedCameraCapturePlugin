@@ -1,0 +1,2 @@
+# SeedCameraCapturePlugin
+CamerCapturePlugin for Unity
