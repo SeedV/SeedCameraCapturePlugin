@@ -2,6 +2,14 @@
 CameraCapturePlugin for Unity
 
 
+## Setup
+
+YThe recommended Unity editor version is 2020.3.30f1 LTS, but other editor may likely work.
+
+Check out the project files into a local directory and open Unity editor. Then based on the platform, please rebuild FFmpeg 4.x from https://github.com/FFmpeg/FFmpeg
+
+Copy the built files into Assets/Plugin/FFmpeg/Linux&&macOS&&Windows  
+
 
 
 ## Description
