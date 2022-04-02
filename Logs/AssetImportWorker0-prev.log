@@ -1,0 +1,207 @@
+Unity Editor version:    2020.3.30f1c1 (b9cd9c36b8f8)
+Branch:                  2020.3/china_unity/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.3 (Build 21E230)
+Darwin version:          21.4.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        32768 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.30f1c1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/admin/Desktop/SeedV/Project/SeedCameraCapturePlugin
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60170
+Successfully changed project path to: /Users/admin/Desktop/SeedV/Project/SeedCameraCapturePlugin
+/Users/admin/Desktop/SeedV/Project/SeedCameraCapturePlugin
+Using Asset Import Pipeline V2.
+AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 215.63 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1c1 (b9cd9c36b8f8)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.30f1c1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/admin/Desktop/SeedV/Project/SeedCameraCapturePlugin/Assets
+GfxDevice: creating device client; threaded=0
+2022-03-31 10:34:08.548 Unity[28819:12865630] Color LCD preferred device: AMD Radeon Pro 555X (high power)
+2022-03-31 10:34:08.548 Unity[28819:12865630] Metal devices available: 2
+2022-03-31 10:34:08.548 Unity[28819:12865630] 0: AMD Radeon Pro 555X (high power)
+2022-03-31 10:34:08.548 Unity[28819:12865630] 1: Intel(R) UHD Graphics 630 (low power)
+2022-03-31 10:34:08.548 Unity[28819:12865630] Using device AMD Radeon Pro 555X (high power)
+Initializing Metal device caps: AMD Radeon Pro 555X
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.30f1c1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.30f1c1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.30f1c1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56819
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.30f1c1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.30f1c1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000740 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 69.76 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Domain Reload Profiling:
+	ReloadAssembly (791ms)
+		BeginReloadAssembly (64ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (604ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (240ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (116ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002410 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 8.18 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.141 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1141ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (894ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (316ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (8ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.011774 seconds.
+
+LICENSE SYSTEM [2022331 10:34:10] Next license update check is after 2022-04-01T02:33:38
+
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.012040 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.30f1c1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Initializing Unity extensions:
+2022-03-31 10:34:11.241 Unity[28819:12865630] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000016a0d20 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-03-31 10:34:11.244 Unity[28819:12865630] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000016b3090 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 10.09 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2420 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.7 MB.
+System memory in use after: 200.8 MB.
+
+Unloading 992 unused Assets to reduce memory usage. Loaded Objects now: 1980.
+Total: 4.459749 ms (FindLiveObjects: 0.191713 ms CreateObjectMapping: 0.112861 ms MarkObjects: 3.072205 ms  DeleteObjects: 1.082099 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Plugin/FFmpeg/Source/Public
+  artifactKey: Guid(cc8a40dace1b34ba7876cbe023262295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/Source/Public using Guid(cc8a40dace1b34ba7876cbe023262295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c681043e157f1d7ae01c103745332df') in 0.004593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Plugin/FFmpeg/Source/Private
+  artifactKey: Guid(bb34503b4f7fb46b681f12b569235c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/Source/Private using Guid(bb34503b4f7fb46b681f12b569235c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '670f9bbd04f928cd0ee8548fe7d58241') in 0.000863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5351.908717 seconds.
+  path: Assets/Plugin/FFmpeg/ThirdParty/ffmpeg
+  artifactKey: Guid(3cd5ebae9ffa041a88ad5025e6176d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/ThirdParty/ffmpeg using Guid(3cd5ebae9ffa041a88ad5025e6176d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f55bdecd8539b034ad391db0c2e10c') in 0.002733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.368686 seconds.
+  path: Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib
+  artifactKey: Guid(70952d496c77f4a839e0999647f0f21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib using Guid(70952d496c77f4a839e0999647f0f21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1d8921dd024ad67ee52546136933b1') in 0.001952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.639291 seconds.
+  path: Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx
+  artifactKey: Guid(2018f1c12ba6c49dcba45c95ae822071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx using Guid(2018f1c12ba6c49dcba45c95ae822071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fbd872eab8147dee7c0a06bcdf3ad55') in 0.002303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.871554 seconds.
+  path: Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx/libavcodec.58.dylib
+  artifactKey: Guid(ed7b61ca3176a47758d3ac999df92b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx/libavcodec.58.dylib using Guid(ed7b61ca3176a47758d3ac999df92b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf6078d8124fb692d56a36bc29af1ff') in 0.655505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.087622 seconds.
+  path: Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx/libavdevice.58.dylib
+  artifactKey: Guid(9d8e296a6ea18485bb80a8b7a69fe164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx/libavdevice.58.dylib using Guid(9d8e296a6ea18485bb80a8b7a69fe164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7416d5a38de2a029ee6bffa46c53efe') in 0.002451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.509298 seconds.
+  path: Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx/libavcodec.58.dylib
+  artifactKey: Guid(ed7b61ca3176a47758d3ac999df92b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugin/FFmpeg/ThirdParty/ffmpeg/lib/osx/libavcodec.58.dylib using Guid(ed7b61ca3176a47758d3ac999df92b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0209d99bd9eb6910112c2b29782f5ca5') in 0.003335 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

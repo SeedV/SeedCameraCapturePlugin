@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{8E126ACB-36C8-9FA9-BC65-2AB7F5E722BD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugin/SeedFFmpegSession.cs">
+    <Files>
+      <File FileName="Assets/Script/Webcam.cs" Line="213" Column="1" />
+      <File FileName="Assets/Plugin/SeedFFmpegSession.cs" Line="32" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SeedCameraCapturePlugin" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Plugin" expanded="True">
+                <Node name="Shader" expanded="True" />
+                <Node name="SeedFFmpegSession.cs" selected="True" />
+              </Node>
+              <Node name="Script" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7fa3328c-6756-4715-bad7-0e3dcd9ea701" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
