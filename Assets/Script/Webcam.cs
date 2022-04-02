@@ -28,7 +28,7 @@ namespace SeedFFmpeg
             set { _height = value; }
         }
 
-        [SerializeField] float _frameRate = 60;
+        [SerializeField] float _frameRate = 30;
 
         public float frameRate
         {
