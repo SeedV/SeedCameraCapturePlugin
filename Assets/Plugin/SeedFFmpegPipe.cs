@@ -131,7 +131,10 @@ namespace SeedFFmpeg
         {
             get
             {
-                var basePath = "/Users/admin/Desktop/SeedV/Project/SeedCameraCapturePlugin/Assets/Plugin/FFmpeg";
+                var basePath =  UnityEngine.Application.dataPath + "/Plugin/FFmpeg";
+
+                
+
                 var platform = UnityEngine.Application.platform;
 
                 if (platform == UnityEngine.RuntimePlatform.OSXPlayer ||

@@ -28,7 +28,7 @@ namespace SeedFFmpeg
         )
         {
             return new FFmpegSession(
-                "-y -f rawvideo -vcodec rawvideo -pixel_format rgba"
+                "-y -c copy -f rawvideo -vcodec rawvideo -pixel_format rgba"
                 + " -colorspace bt709 -thread_queue_size 512"
                 + " -video_size " + width + "x" + height
                 + " -framerate " + frameRate

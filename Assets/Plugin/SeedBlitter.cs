@@ -33,7 +33,7 @@ namespace SeedFFmpeg
         // Assuming that the 5th layer is "UI". #badcode
         const int UILayer = 5;
 
-        Texture _sourceTexture;
+        public Texture _sourceTexture;
         Mesh _mesh;
         Material _material;
 

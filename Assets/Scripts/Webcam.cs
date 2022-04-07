@@ -6,7 +6,7 @@ namespace SeedFFmpeg
 {
     public class Webcam : MonoBehaviour
     {
-        public string _device;
+        private string _device;
         private WebCamTexture _webcam;
         [SerializeField] private RenderTexture _buffer;
         [SerializeField] string _rtmp_url;
@@ -88,23 +88,26 @@ namespace SeedFFmpeg
         // Start is called before the first frame update
         IEnumerator Start()
         {
+
+            
+
             _rtmp_url = "rtmp://localhost/live/test";
             yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
             if (Application.HasUserAuthorization(UserAuthorization.WebCam))
             {
                 WebCamDevice[] devices = WebCamTexture.devices;
                 _device = devices[2].name;
-                _webcam = new WebCamTexture(_device, 1920, 1080, 30);
+                _webcam = new WebCamTexture(_device, _width, _height, 30);
                 //GetComponent<Renderer>().material.mainTexture = _webcam;
                 _webcam.Play();
             }
             
 
 
-            for (var eof = new WaitForEndOfFrame(); ;)
+            while(true)
             {
-                yield return eof;
                 _session?.CompletePushFrames();
+                yield return new WaitForEndOfFrame();
             }
 
 
