@@ -8,6 +8,15 @@ namespace SeedFFmpeg
 {
     public sealed class FFmpegPipe : System.IDisposable
     {
+        private void Output(object sendProcess, DataReceivedEventArgs output)
+        {
+            if (!string.IsNullOrEmpty(output.Data))
+            {
+                //处理方法...
+                UnityEngine.Debug.Log(output.Data);
+            }
+        }
+
         #region Public methods
 
         public static bool IsAvailable
@@ -28,6 +37,10 @@ namespace SeedFFmpeg
                 RedirectStandardOutput = true,
                 RedirectStandardError = true
             });
+
+            _subprocess.ErrorDataReceived += new DataReceivedEventHandler(Output);
+
+            _subprocess.BeginErrorReadLine();
 
             // Start copy/pipe subthreads.
             _copyThread = new Thread(CopyThread);
@@ -71,14 +84,14 @@ namespace SeedFFmpeg
             _subprocess.StandardInput.Close();
             _subprocess.WaitForExit();
 
-            var outputReader = _subprocess.StandardError;
-            var error = outputReader.ReadToEnd();
+            //var outputReader = _subprocess.StandardError;
+            //var error = outputReader.ReadToEnd();
 
             _subprocess.Close();
             _subprocess.Dispose();
 
-            outputReader.Close();
-            outputReader.Dispose();
+            //outputReader.Close();
+            //outputReader.Dispose();
 
             // Nullify members (just for ease of debugging).
             _subprocess = null;
@@ -87,7 +100,7 @@ namespace SeedFFmpeg
             _copyQueue = null;
             _pipeQueue = _freeBuffer = null;
 
-            return error;
+            return "closed";
         }
 
         #endregion
@@ -131,7 +144,10 @@ namespace SeedFFmpeg
         {
             get
             {
-                var basePath = "/Users/admin/Desktop/SeedV/Project/SeedCameraCapturePlugin/Assets/Plugin/FFmpeg";
+                var basePath =  UnityEngine.Application.dataPath + "/Plugin/FFmpeg";
+
+                
+
                 var platform = UnityEngine.Application.platform;
 
                 if (platform == UnityEngine.RuntimePlatform.OSXPlayer ||

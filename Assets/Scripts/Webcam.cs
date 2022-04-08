@@ -6,7 +6,7 @@ namespace SeedFFmpeg
 {
     public class Webcam : MonoBehaviour
     {
-        public string _device;
+        private string _device;
         private WebCamTexture _webcam;
         [SerializeField] private RenderTexture _buffer;
         [SerializeField] string _rtmp_url;
@@ -28,7 +28,7 @@ namespace SeedFFmpeg
             set { _height = value; }
         }
 
-        [SerializeField] float _frameRate = 60;
+        [SerializeField] float _frameRate = 30;
 
         public float frameRate
         {
@@ -88,23 +88,26 @@ namespace SeedFFmpeg
         // Start is called before the first frame update
         IEnumerator Start()
         {
+
+            
+
             _rtmp_url = "rtmp://localhost/live/test";
             yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
             if (Application.HasUserAuthorization(UserAuthorization.WebCam))
             {
                 WebCamDevice[] devices = WebCamTexture.devices;
                 _device = devices[2].name;
-                _webcam = new WebCamTexture(_device, 1920, 1080, 30);
+                _webcam = new WebCamTexture(_device, _width, _height, 30);
                 //GetComponent<Renderer>().material.mainTexture = _webcam;
                 _webcam.Play();
             }
             
 
 
-            for (var eof = new WaitForEndOfFrame(); ;)
+            while(true)
             {
-                yield return eof;
                 _session?.CompletePushFrames();
+                yield return new WaitForEndOfFrame();
             }
 
 
@@ -166,7 +169,7 @@ namespace SeedFFmpeg
             }
             else if (gap < delta)
             {
-                //Debug.Log("push 1 frame");
+                Debug.Log("push 1 frame");
                 // Single-frame behind from the current time:
                 // Push the current frame to FFmpeg.
                 _session.PushFrame(camera.targetTexture);
@@ -174,7 +177,7 @@ namespace SeedFFmpeg
             }
             else if (gap < delta * 2)
             {
-                //Debug.Log("push 2 frame");
+                Debug.Log("push 2 frame");
                 // Two-frame behind from the current time:
                 // Push the current frame twice to FFmpeg. Actually this is not
                 // an efficient way to catch up. We should think about
