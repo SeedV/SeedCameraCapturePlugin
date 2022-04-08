@@ -169,7 +169,7 @@ namespace SeedFFmpeg
             }
             else if (gap < delta)
             {
-                //Debug.Log("push 1 frame");
+                Debug.Log("push 1 frame");
                 // Single-frame behind from the current time:
                 // Push the current frame to FFmpeg.
                 _session.PushFrame(camera.targetTexture);
@@ -177,7 +177,7 @@ namespace SeedFFmpeg
             }
             else if (gap < delta * 2)
             {
-                //Debug.Log("push 2 frame");
+                Debug.Log("push 2 frame");
                 // Two-frame behind from the current time:
                 // Push the current frame twice to FFmpeg. Actually this is not
                 // an efficient way to catch up. We should think about
